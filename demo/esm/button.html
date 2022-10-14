@@ -1,0 +1,22 @@
+<h1>Demo</h1>
+<div id="app"></div>
+<script type="module">
+    import { createApp } from "vue/dist/vue.esm-bundler.js";
+    import YoungUI, {
+        SFCButton,
+        JSXButton,
+        YButton,
+    } from "../../dist/young-ui.mjs";
+
+    createApp({
+        template: `
+<YButton/>
+<JSXButton/>
+<SFCButton/>
+`,
+    })
+        .component(SFCButton.name, SFCButton)
+        .component(JSXButton.name, JSXButton)
+        .component(YButton.name, YButton)
+        .mount("#app");
+</script>
