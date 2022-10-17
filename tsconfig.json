@@ -7,6 +7,8 @@
   "include": [
       "./**/*.*",
       "./shims-vue.d.ts",
+      "src/.vitepress/**/*",
+      "src/**/*"
   ],
   "lib": ["ES2015", "DOM", "es6", "ES2016"],
   "exclude": [
