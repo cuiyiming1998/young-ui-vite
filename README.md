@@ -15,3 +15,8 @@
 ```
 - build后查看demo
   * 地址栏`localhost:5173/` + `demo文件地址`
+
+- 启动文档服务
+```bash
+  pnpm docs:dev
+```
