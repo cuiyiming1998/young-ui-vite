@@ -8,6 +8,7 @@
       "./**/*.*",
       "./shims-vue.d.ts",
   ],
+  "lib": ["ES2015", "DOM", "es6", "ES2016"],
   "exclude": [
       "node_modules"
   ],
