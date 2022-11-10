@@ -1,3 +1,7 @@
+/// <reference types="vitest" />
+// test是vitest的扩展属性 vite原生定义中并没有这个属性
+// 所以要加一个ts类型声明
+
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -36,5 +40,12 @@ export default defineConfig({
 			// 导出模块格式
 			formats: ['es', 'umd', 'iife']
 		}
-	}
+	},
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+    transformMode: {
+      web: [/.[tj]sx$/]
+    }
+  }
 })

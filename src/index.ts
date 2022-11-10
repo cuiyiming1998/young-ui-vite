@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import YoungUI from './entry'
 
 createApp({
-	template: `
+  template: `
     <div>
       <YButton color="blue">蓝色按钮</YButton>
       <YButton color="green">绿色按钮</YButton>
@@ -19,5 +19,5 @@ createApp({
     </div>
   `
 })
-	.use(YoungUI)
-	.mount('#app')
+  .use(YoungUI)
+  .mount('#app')
